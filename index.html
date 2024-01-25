@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Jafar | Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/signature.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.svg" alt="the company's logo" />
+      <h2 class="form-title">Job Application Form</h2>
+      <h3>Robert jafar construction inc</h3>
+      <form action="#" method="post" class="application-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="dob">Date Of Birth:</label>
+          <input type="date" id="dob" name="date_of_birth" required />
+          <label for="ssn">Social Security Number:</label>
+          <input type="text" id="ssn" name="ssn" required />
+          <label for="addr">Address (Number, Street, Building):</label>
+          <input type="text" id="addr" name="address" required />
+          <label for="cty">City:</label>
+          <input type="text" id="cty" name="city" required />
+          <label for="stt">State:</label>
+          <input type="text" id="stt" name="state" required />
+          <label for="zpcd">ZipCode:</label>
+          <input type="text" id="zpcd" name="zipcode" required />
+          <label for="phone1" class="phone-span">Phone1:</label>
+          <input type="tel" id="phone1" name="phone1" required />
+          <label for="phone2" class="phone-span">Phone2:</label>
+          <input type="tel" id="phone2" name="phone2" />
+          <label for="email" class="phone-span">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <h4>
+            Have you ever been convicted of a crime other than a minor traffic
+            accident?
+          </h4>
+          <label for="crimeYes" class="inline-label"> Yes</label>
+          <input type="checkbox" id="crimeYes" name="crime" />
+          <label for="crimeExplanation">If yes, explain:</label>
+          <textarea
+            id="crimeExplanation"
+            name="crimeExplanation"
+            rows="3"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Desired Employment</legend>
+          <h4>Employment Type</h4>
+          <input
+            type="radio"
+            id="part_time"
+            name="job_type"
+            value="part_time"
+            required
+          />
+          <label for="part_time">Part Time</label><br />
+          <input
+            type="radio"
+            id="full_time"
+            name="job_type"
+            value="full_time"
+            checked
+          />
+          <label for="full_time">Full Time</label><br />
+          <label for="position">Position Applying For</label><br />
+
+          <select id="position" name="position">
+            <option value="web_developer">Web Developer</option>
+            <option value="computer_technician">Computer Technician</option>
+            <option value="data_entry">Data Entry</option>
+            <option value="virtual_assistant">Virtual Assistant</option>
+          </select>
+          <label for="salary">Desired Salary ($):</label>
+          <input
+            type="number"
+            id="salary"
+            name="salary"
+            min="1000"
+            max="20000"
+            required
+          />
+          <br /><br />
+
+          <label for="start_date">Date You Can Start:</label>
+          <input type="date" id="start_date" name="start_date" required />
+        </fieldset>
+
+        <fieldset class="education-history">
+          <legend>Education (latest to oldest)</legend>
+          <label for="school1">School:</label>
+          <input type="text" id="school1" name="school1" required />
+          <label for="location1">Location:</label>
+          <input type="text" id="location1" name="location1" required />
+          <label for="graduated_date1">Date Graduated</label>
+          <input
+            type="date"
+            id="graduated_date1"
+            name="graduated_date1"
+            required
+          />
+          <label for="attainment1">Attainment:</label>
+          <input
+            type="text"
+            id="attainment1"
+            name="attainment1"
+            class="attainment"
+            required
+          />
+          <div class="record-add-cta">
+            <span>+</span>
+          </div>
+        </fieldset>
+
+        <fieldset class="work-exp">
+          <legend>Work Experience</legend>
+          <label for="company_name1">Company Name:</label>
+          <input type="text" id="company_name1" name="company_name1" required />
+          <label for="from_year1">Year From:</label>
+          <input
+            type="number"
+            id="from_year1"
+            name="from_year1"
+            min="2000"
+            max="2024"
+            required
+          />
+          <label for="to_year1">Year To:</label>
+          <input
+            type="number"
+            id="to_year1"
+            name="to_year1"
+            min="2000"
+            max="2024"
+            required
+          />
+
+          <label for="position1">Position:</label>
+          <input type="text" id="position1" name="position1" required />
+          <label for="leave_reason1">Reason For Leaving:</label>
+          <textarea
+            id="leave_reason1"
+            name="leave_reason1"
+            cols="3"
+            rows="2"
+          ></textarea>
+          <label for="contact_employer1"
+            >May we contact your current employer?</label
+          >
+          <label for="contact_employer1_check" class="inline-label"> Yes</label>
+          <input
+            type="checkbox"
+            id="contact_employer1_check"
+            name="contact_employer1_check"
+          />
+          <label for="contact_employer1_explain">If No, Why?:</label>
+          <textarea
+            id="contact_employer1_explain"
+            name="contact_employer1_explain"
+            rows="3"
+          ></textarea>
+          <label for="supervisor_name1">If yes, name of supervisor:</label>
+          <textarea
+            id="supervisor_name1"
+            name="supervisor_name1"
+            rows="3"
+          ></textarea>
+          <label for="supervisor_phone1">Contact Number:</label>
+          <input
+            type="tel"
+            name="supervisor_phone1"
+            id="supervisor_phone1"
+            class="supervisor-phone"
+            required
+          />
+          <div class="record-add-cta">
+            <span>+</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Major Skills (comma separated)</legend>
+          <input type="text" id="major_skills" name="major_skills" required />
+        </fieldset>
+
+        <fieldset class="confirmation-box">
+          <legend>Confirmation</legend>
+          <label for="confirmation" class="inline-label"
+            >I certify that the information contained in this application is
+            accurate and correct.</label
+          >
+          <input type="checkbox" id="confirmation" name="confirmation" />
+          <label for="signature">Signature:</label>
+          <input type="text" id="signature" name="signature" readonly />
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+      </form>
+      <button id="clear-signature">clear signature</button>
+      <canvas id="signature-pad"></canvas>
+    </div>
+  </body>
+</html>
