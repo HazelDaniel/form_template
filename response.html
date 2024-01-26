@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Response</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 20px;
+      }
+      h1 {
+        color: #1e2e3d;
+      }
+      .response-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      fieldset {
+        border: 2px solid #0066cc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      legend {
+        color: #0066cc;
+        font-weight: bold;
+      }
+      .record-add-cta {
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        color: #0066cc;
+      }
+      table {
+        table-layout: auto;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+      }
+      table th {
+        background-color: #0066cc;
+        color: #fff3f0;
+        border-right: 1px solid #ffffff;
+      }
+      table td {
+        border-right: 1px solid #0066cc;
+      }
+      #signature-img {
+        border: 2px solid #0066cc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Application Response</h1>
+
+    <div class="response-container">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Date Of Birth:</strong> 1990-01-01</p>
+        <p><strong>Social Security Number:</strong> XXX-XX-XXXX</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Desired Employment</legend>
+        <p><strong>Employment Type:</strong> Full Time</p>
+        <p><strong>Position Applying For:</strong> Web Developer</p>
+        <p><strong>Desired Salary ($):</strong> 50000</p>
+        <p><strong>Date You Can Start:</strong> 2022-02-01</p>
+      </fieldset>
+
+      <fieldset class="education-history">
+        <legend>Education History</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>School</th>
+              <th>Location</th>
+              <th>Date Graduated</th>
+              <th>Attainment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>University of Example</td>
+              <td>City, Country</td>
+              <td>2015-05-15</td>
+              <td>Bachelor's Degree</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <fieldset class="work-exp">
+        <legend>Work Experience</legend>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Company Name</th>
+              <th>Year From</th>
+              <th>Year To</th>
+              <th>Position</th>
+              <th>Reason For Leaving</th>
+              <th>Supervisor Name</th>
+              <th>Supervisor Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ABC Corporation</td>
+              <td>2018</td>
+              <td>2022</td>
+              <td>Software Engineer</td>
+              <td>Pursuing new opportunities</td>
+              <td>Jane Doe</td>
+              <td>0800000</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Major Skills (comma separated)</legend>
+        <p><strong>Major Skills:</strong> HTML, CSS, JavaScript, Python</p>
+      </fieldset>
+
+      <fieldset class="confirmation-box">
+        <legend>Confirmation</legend>
+        <p>
+          <strong
+            >I certify that the information contained in this application is
+            accurate and correct:</strong
+          >
+          Checked
+        </p>
+        <p><strong>Signature:</strong></p>
+        <div id="signature-img">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='100'%3E%3Crect width='100%' height='100%' fill='lightgray'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='black'%3ESignature Placeholder%3C/text%3E%3C/svg%3E"
+            alt="Signature"
+          />
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
