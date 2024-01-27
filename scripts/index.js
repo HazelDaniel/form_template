@@ -255,15 +255,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!signatureImage) alert("signature fields empty");
       formData.fields["signature_image"] = signatureImage;
 
-      fetch("http://127.0.0.1:8000/api/services/form/", {
+      fetch("https://jafar-backend.onrender.com/api/services/form/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json", },
         body: JSON.stringify(formData.fields),
       })
-        .then((res) => res.body)
-        .then((body) => console.log(body));
+        .then((res) => res.json())
+        .then((_) => {
+					window.location.replace("http://robertjafarcontracting.com/services/form/submitted.html");
+				}
+				)
+				.catch(error => {
+					alert(`an error occurred! ${error.message}\ntry again`);
+			})
     });
   }
 
