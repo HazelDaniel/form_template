@@ -255,14 +255,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!signatureImage) alert("signature fields empty");
       formData.fields["signature_image"] = signatureImage;
 
-      fetch("https://jafar-backend.onrender.com/api/services/form/", {
+      fetch("http://localhost:8000/api/services/form/", {
         method: "POST",
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify(formData.fields),
       })
         .then((res) => res.json())
         .then((_) => {
-					window.location.replace("http://robertjafarcontracting.com/services/form/submitted.html");
+					window.location.replace("http://localhost:3000/submitted.html");
 				}
 				)
 				.catch(error => {
